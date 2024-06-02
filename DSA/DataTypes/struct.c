@@ -4,7 +4,7 @@
 struct Subject {
   char subjectOne[10];
   char SubjectTwo[10];
-  char subjectTheree[10];
+  char subjectThree[10];
 };
 
 struct Number {
@@ -39,7 +39,7 @@ int main() {
   snprintf(FirstYear.Marks.Number.Subject.SubjectTwo, sizeof(FirstYear.Marks.Number.Subject.SubjectTwo), "DAA");
   FirstYear.Marks.Number.NumberTwo = 90;
 
-  snprintf(FirstYear.Marks.Number.Subject.subjectTheree, sizeof(FirstYear.Marks.Number.Subject.subjectTheree), "CO");
+  snprintf(FirstYear.Marks.Number.Subject.subjectThree, sizeof(FirstYear.Marks.Number.Subject.subjectThree), "CO");
   FirstYear.Marks.Number.NumberThree = 100;
 
   // Print the student details
@@ -50,7 +50,7 @@ int main() {
 
   printf("Subject One: %s, Marks: %d\n", FirstYear.Marks.Number.Subject.subjectOne, FirstYear.Marks.Number.NumberOne);
   printf("Subject Two: %s, Marks: %d\n", FirstYear.Marks.Number.Subject.SubjectTwo, FirstYear.Marks.Number.NumberTwo);
-  printf("Subject Three: %s, Marks: %d\n", FirstYear.Marks.Number.Subject.subjectTheree, FirstYear.Marks.Number.NumberThree);
+  printf("Subject Three: %s, Marks: %d\n", FirstYear.Marks.Number.Subject.subjectThree, FirstYear.Marks.Number.NumberThree);
 
   return 0;
 }
